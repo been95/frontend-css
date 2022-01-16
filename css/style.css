@@ -80,6 +80,7 @@ select{
     height: 52px;
     position: absolute;
     bottom: 0;
+    margin-bottom: 20px;
 }
 .group_nav{
   position:absolute;
@@ -114,6 +115,7 @@ select{
 .group_nav ul li a{
   text-decoration: none;
   cursor: pointer;
+  color:#202020;
 }
 
 .keyword{
@@ -138,7 +140,6 @@ main {
 .ad{
   grid-column: 1 / 4;
   grid-row: 1 / 4;
-  margin-top: 20px;
   height: 135px;
 }
 .ad a{
@@ -156,7 +157,6 @@ main {
   border: 1px solid #dae1e6;
   height: 135px;
   box-sizing: border-box;
-  margin-top: 20px;
 }
 h2{
   position: absolute;
@@ -230,9 +230,59 @@ h2{
 .grour_issue {
   grid-column: 1 / 3;
   grid-row: 4 / 5;
-  background-color: violet;
+  position: relative;
+  padding: 8px 15px 11px 15px;
+  background-color: #f7f9fa;
+  border: 1px solid #dae1e6;
+  line-height: 24px;
 }
-
+.issue_area {
+  float: left;
+}
+.issue_area a{
+    float: left;
+    position: relative;
+    max-width: 89px;
+    padding-right: 12px;
+    margin-right: 7px;
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.issue_area a::after{
+  position: absolute;
+    top: 7px;
+    right: 0;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    background-image: url('../images/naver_sp_main_6f9b98.png');
+}
+.list_issue{
+  font-size: 12px;
+  text-decoration: none;
+}
+.direct_area{
+  float: right;
+  font-weight: 700;
+}
+.direct_area a{
+  float: left;
+  height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.direct_area a:first-of-type{
+  color:#3565c9;
+}
+.direct_area a:not(:first-child){
+  margin: 0 4px 0 7px;
+  color:#202020;
+}
 .box-three-2 {
   grid-column: 1 / 3;
   grid-row: 4 / 7;
