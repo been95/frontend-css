@@ -3,7 +3,6 @@
   margin:auto;
   width: 1190px;
   height: 215px;
-  display:flex;
   align-items:center;
   position: relative;
 }
@@ -52,8 +51,7 @@ select{
   position: relative;
   width: 582px;
   height: 52px;
-  border:2px solid #19ce60;
-  align-items: center;
+  border:2px solid hsl(144, 78%, 45%);
 }
 .input_text{
   flex:9;
